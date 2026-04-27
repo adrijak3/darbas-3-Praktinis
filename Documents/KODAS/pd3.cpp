@@ -17,4 +17,23 @@ int main()
     menuitemtype sarasas[20];
     getdata(sarasas,kiekis);
     showmenu(sarasas,kiekis);
+
+    int pasirinkimas;
+    cout << "Koks patiekalo numeris?";
+    while (cin >> pasirinkimas && pasirinkimas != 0)
+    {
+        if (pasirinkimas > 0 && pasirinkimas <= kiekis)
+        {
+            int n;
+            cout << "kiek porciju noresite? " << endl;
+            cin >> n;
+            kiekiai[pasirinkimas - 1]+= n;
+            cout << "dar noresite dar kazko?"; { else {cout <<"nera tokio patiekalo";
+            }
+        }
+        printcheck(sarasas,kiekiai,kiekis);
+        return 0;
     }
+
+
+}
